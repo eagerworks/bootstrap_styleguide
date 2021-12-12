@@ -1,0 +1,4 @@
+module BootstrapStyleguide
+  class ApplicationController < ActionController::Base
+  end
+end
