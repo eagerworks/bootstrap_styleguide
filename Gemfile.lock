@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     bootstrap_styleguide (0.1.0)
-      rails (~> 6.1.4, >= 6.1.4.1)
+      rails
 
 GEM
   remote: https://rubygems.org/
