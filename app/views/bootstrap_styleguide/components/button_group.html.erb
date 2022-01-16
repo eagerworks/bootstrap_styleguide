@@ -1,69 +1,67 @@
-<div class="container pt-4">
-  <h1 id="content">Button group</h1>
-  <p class="bd-lead">Group a series of buttons together on a single line or stack them in a vertical column.</p>
+<h1 id="content">Button group</h1>
+<p class="bd-lead">Group a series of buttons together on a single line or stack them in a vertical column.</p>
 
-  <h2>Basic example</h2>
-  <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+<h2>Basic example</h2>
+<p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
 
-  <%= example_with_code do %>
-    <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-primary">Left</button>
-      <button type="button" class="btn btn-primary">Middle</button>
-      <button type="button" class="btn btn-primary">Right</button>
+<%= example_with_code do %>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div>
+<% end %>
+
+<h2>Checkbox and radio button groups</h2>
+
+<p>Combine button-like checkbox and radio toggle buttons into a seamless looking button group.</p>
+
+<%= example_with_code do %>
+  <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+
+    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+  </div>
+<% end %>
+
+<% example_with_code do %>
+  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+    <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+  </div>
+<% end %>
+
+<h2>Sizing</h2>
+
+<p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
+
+<%= example_with_code do %>
+    <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+      <button type="button" class="btn btn-outline-dark">Left</button>
+      <button type="button" class="btn btn-outline-dark">Middle</button>
+      <button type="button" class="btn btn-outline-dark">Right</button>
     </div>
-  <% end %>
-
-  <h2>Checkbox and radio button groups</h2>
-
-  <p>Combine button-like checkbox and radio toggle buttons into a seamless looking button group.</p>
-
-  <%= example_with_code do %>
-    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-      <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
-
-      <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-
-      <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+    <br>
+    <div class="btn-group mt-2" role="group" aria-label="Default button group">
+      <button type="button" class="btn btn-outline-dark">Left</button>
+      <button type="button" class="btn btn-outline-dark">Middle</button>
+      <button type="button" class="btn btn-outline-dark">Right</button>
     </div>
-  <% end %>
-
-  <% example_with_code do %>
-    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-      <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
-
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
-
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+    <br>
+    <div class="btn-group btn-group-sm mt-2" role="group" aria-label="Small button group">
+      <button type="button" class="btn btn-outline-dark">Left</button>
+      <button type="button" class="btn btn-outline-dark">Middle</button>
+      <button type="button" class="btn btn-outline-dark">Right</button>
     </div>
-  <% end %>
-
-  <h2>Sizing</h2>
-
-  <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
-
-  <%= example_with_code do %>
-      <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-        <button type="button" class="btn btn-outline-dark">Left</button>
-        <button type="button" class="btn btn-outline-dark">Middle</button>
-        <button type="button" class="btn btn-outline-dark">Right</button>
-      </div>
-      <br>
-      <div class="btn-group mt-2" role="group" aria-label="Default button group">
-        <button type="button" class="btn btn-outline-dark">Left</button>
-        <button type="button" class="btn btn-outline-dark">Middle</button>
-        <button type="button" class="btn btn-outline-dark">Right</button>
-      </div>
-      <br>
-      <div class="btn-group btn-group-sm mt-2" role="group" aria-label="Small button group">
-        <button type="button" class="btn btn-outline-dark">Left</button>
-        <button type="button" class="btn btn-outline-dark">Middle</button>
-        <button type="button" class="btn btn-outline-dark">Right</button>
-      </div>
-  <% end %>
-</div>
+<% end %>
