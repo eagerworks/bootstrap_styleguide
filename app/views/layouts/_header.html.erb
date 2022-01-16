@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Styleguide</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Layout
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <% [:breakpoints, :containers, :grid].each do |item| %>
+              <li>
+                <%= link_to item.to_s.humanize, send("layout_#{item}_path"), class: 'dropdown-item' %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Content
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <% [:typography, :images, :tables].each do |item| %>
+              <li>
+                <%= link_to item.to_s.humanize, send("content_#{item}_path"), class: 'dropdown-item' %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Forms
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <% [:select, :checks_and_radios, :range, :input_group, :floating_labels].each do |item| %>
+              <li>
+                <%= link_to item.to_s.humanize, send("forms_#{item}_path"), class: 'dropdown-item' %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Components
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%
+              components_items = [
+                :accordion, :alerts, :badge, :breadcrumbs, :buttons, :button_group, :cards, :carousel,
+                :close_button, :collapse, :dropdowns, :modal, :navs_and_tabs, :navbar, :offcanvas, :pagination,
+                :popovers, :progress, :spinners, :toasts, :tooltips
+              ]
+            %>
+            <% components_items.each do |item| %>
+              <li>
+                <%= link_to item.to_s.humanize, send("components_#{item}_path"), class: 'dropdown-item' %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Utilities
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%
+              utilities_items = [
+                :background, :borders, :colors, :shadows, :spacing, :text
+              ]
+            %>
+            <% utilities_items.each do |item| %>
+              <li>
+                <%= link_to item.to_s.humanize, send("utilities_#{item}_path"), class: 'dropdown-item' %>
+              </li>
+            <% end %>
+          </ul>
+      </ul>
+    </div>
+  </div>
+</nav>

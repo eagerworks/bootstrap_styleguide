@@ -1,0 +1,32 @@
+<div class="container pt-4">
+  <h1 id="content">Input group</h1>
+  <p class="bd-lead">Give textual form controls like <code>&lt;input&gt;</code>s and <code>&lt;textarea&gt;</code>s an upgrade with custom styles, sizing, focus states, and more.</p>
+
+  <h2>Examples</h2>
+
+  <%= example_with_code do %>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  <% end %>
+
+  <h2>Sizing</h2>
+  <p>Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+
+  <%= example_with_code do %>
+    <div class="mb-3">
+      <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+    </div>
+    <div class="mb-3">
+      <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+    </div>
+    <div class="mb-3">
+      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+    </div>
+  <% end %>
+</div>

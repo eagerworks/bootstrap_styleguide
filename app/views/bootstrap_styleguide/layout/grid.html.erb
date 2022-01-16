@@ -1,0 +1,53 @@
+<div class="container pt-4">
+  <h1 id="content">Grid system</h1>
+  <p>Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+
+  <h2>Example</h2>
+  <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth explanation for how the grid system comes together.</p>
+
+  <%= example_with_code do %>
+    <div class="container bg-light">
+      <div class="row">
+        <div class="col py-3 border">
+          Column
+        </div>
+        <div class="col py-3 border">
+          Column
+        </div>
+        <div class="col py-3 border">
+          Column
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <h2>Variable width content</h2>
+  <p>Use <code>col-{breakpoint}-auto</code> classes to size columns based on the natural width of their content.</p>
+
+  <%= example_with_code do %>
+    <div class="container p-2">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2 bg-light py-3 border">
+          1 of 3
+        </div>
+        <div class="col-md-auto bg-light py-3 border">
+          Variable width content
+        </div>
+        <div class="col col-lg-2 bg-light py-3 border">
+          3 of 3
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col bg-light py-3 border">
+          1 of 3
+        </div>
+        <div class="col-md-auto bg-light py-3 border">
+          Variable width content
+        </div>
+        <div class="col col-lg-2 bg-light py-3 border">
+          3 of 3
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
