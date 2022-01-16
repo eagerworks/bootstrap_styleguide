@@ -1,8 +1,5 @@
 # BootstrapStyleguide
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+Bootstrap Styleguide is an easy way to generate a complete styleguide for your rails + bootstrap proyect.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -13,12 +10,18 @@ gem 'bootstrap_styleguide'
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
 Or install it yourself as:
 ```bash
 $ gem install bootstrap_styleguide
+```
+
+If you want to override the styleguide views and add your custom styles and components please run:
+
+```bash
+$ rails generate bootstrap_styleguide:install
 ```
 
 ## Contributing
