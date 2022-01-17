@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.version     = BootstrapStyleguide::VERSION
   spec.authors     = ['Santiago Bertinat']
   spec.email       = ['santiago@eagerworks.com']
-  spec.homepage    = 'https://eagerworks.com'
+  spec.homepage    = 'https://github.com/eagerworks/bootstrap_styleguide'
   spec.summary     = 'Bootstrap Styleguide for you Rails application.'
   spec.description = 'Bootstrap Styleguide for you Rails application.'
   spec.license     = 'MIT'
@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://eagerworks.com'
-  spec.metadata['changelog_uri'] = 'https://eagerworks.com'
+  spec.metadata['source_code_uri'] = 'https://github.com/eagerworks/bootstrap_styleguide'
+  spec.metadata['changelog_uri'] = 'https://github.com/eagerworks/bootstrap_styleguide/commits/master'
 
   spec.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
