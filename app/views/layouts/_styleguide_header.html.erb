@@ -11,7 +11,7 @@
             Layout
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <% [:breakpoints, :containers, :grid].each do |item| %>
+            <% layout_items.each do |item| %>
               <li>
                 <%= link_to item.to_s.humanize, send("layout_#{item}_path"), class: 'dropdown-item' %>
               </li>
@@ -23,7 +23,7 @@
             Content
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <% [:typography, :images, :tables].each do |item| %>
+            <% content_items.each do |item| %>
               <li>
                 <%= link_to item.to_s.humanize, send("content_#{item}_path"), class: 'dropdown-item' %>
               </li>
@@ -35,7 +35,7 @@
             Forms
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <% [:select, :checks_and_radios, :range, :input_group, :floating_labels].each do |item| %>
+            <% forms_items.each do |item| %>
               <li>
                 <%= link_to item.to_s.humanize, send("forms_#{item}_path"), class: 'dropdown-item' %>
               </li>
@@ -47,13 +47,6 @@
             Components
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <%
-              components_items = [
-                :accordion, :alerts, :badge, :breadcrumbs, :buttons, :button_group, :cards, :carousel,
-                :close_button, :collapse, :dropdowns, :modal, :navs_and_tabs, :navbar, :offcanvas, :pagination,
-                :popovers, :progress, :spinners, :toasts, :tooltips
-              ]
-            %>
             <% components_items.each do |item| %>
               <li>
                 <%= link_to item.to_s.humanize, send("components_#{item}_path"), class: 'dropdown-item' %>
@@ -66,11 +59,6 @@
             Utilities
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <%
-              utilities_items = [
-                :background, :borders, :colors, :shadows, :spacing, :text
-              ]
-            %>
             <% utilities_items.each do |item| %>
               <li>
                 <%= link_to item.to_s.humanize, send("utilities_#{item}_path"), class: 'dropdown-item' %>

@@ -1,2 +1,24 @@
-<h1>Styleguide#index</h1>
-<p>Find me in app/views/bootstrap_styleguide/styleguide/index.html.erb</p>
+<h2>Layout</h2>
+<% layout_items.each do |item| %>
+  <%= link_to item.to_s.humanize, send("layout_#{item}_path"), class: 'btn btn-primary mb-2' %>
+<% end %>
+
+<h2 class="mt-3">Content</h2>
+<% content_items.each do |item| %>
+  <%= link_to item.to_s.humanize, send("content_#{item}_path"), class: 'btn btn-primary mb-2' %>
+<% end %>
+
+<h2 class="mt-3">Forms</h2>
+<% forms_items.each do |item| %>
+  <%= link_to item.to_s.humanize, send("forms_#{item}_path"), class: 'btn btn-primary mb-2' %>
+<% end %>
+
+<h2 class="mt-3">Components</h2>
+<% components_items.each do |item| %>
+  <%= link_to item.to_s.humanize, send("components_#{item}_path"), class: 'btn btn-primary mb-2' %>
+<% end %>
+
+<h2 class="mt-3">Utilities</h2>
+<% utilities_items.each do |item| %>
+  <%= link_to item.to_s.humanize, send("utilities_#{item}_path"), class: 'btn btn-primary mb-2' %>
+<% end %>
